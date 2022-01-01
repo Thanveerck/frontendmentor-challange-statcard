@@ -86,7 +86,7 @@ img {
   border-top-left-radius: 15px;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 735px) {
   .container {
     display: flex;
     flex-direction: row;
