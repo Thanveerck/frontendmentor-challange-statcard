@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-main-bg: hsl(233, 47%, 7%);
+  --color-second-bg: hsl(244, 38%, 16%);
+  --color-accent: hsl(277, 64%, 61%);
+
+  --color-heading: hsl(0, 0%, 100%);
+  --color-main-text: hsla(0, 0%, 100%, 0.75);
+  --color-stats-heading: hsla(0, 0%, 100%, 0.6);
+
+  --fs: 15px;
+  --ff-heading: "Inter", sans-serif;
+  --ff-text: "Lexend Deca", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--color-main-bg);
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
+}
+
+.container {
+  background: var(--color-second-bg);
+  width: 90%;
+  height: 90%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+.wrapper {
+  margin: 0 2em;
+  text-align: center;
+}
+.wrapper h1 {
+  color: var(--color-heading);
+  font-family: var(--ff-heading);
+  font-size: 1.75rem;
+}
+
+.wrapper > p {
+  color: var(--color-main-text);
+  font-family: var(--ff-text);
+  font-size: 0.82rem;
+  margin: 0 1em;
+  line-height: 1.5em;
+}
+
+.wrapper span {
+  color: var(--color-accent);
+}
+.values h5,
+p {
+  margin: 0;
+}
+
+.values {
+  margin: 2.5em 0;
+}
+.values .items {
+  margin-bottom: 2em;
+}
+.items h5 {
+  color: var(--color-heading);
+  font-family: var(--ff-heading);
+  font-size: 1.2rem;
+}
+
+.items p {
+  color: var(--color-stats-heading);
+  font-family: var(--ff-text);
+  font-size: 0.8rem;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+
+@media screen and (min-width: 500px) {
+  .container {
+    display: flex;
+    flex-direction: row;
+    height: 446px;
+    width: 1124px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
+  .container > * {
+    flex: 1;
+  }
+
+  .hero-img {
+    order: 2;
+  }
+  img {
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+    text-align: left;
+    padding-left: 5%;
+  }
+
+  .wrapper > p {
+    font-size: 0.9em;
+    width: 70%;
+    margin: 0;
+    margin-top: 1.3em;
+  }
+
+  .wrapper h1 {
+    width: 90%;
+    font-size: 2em;
+  }
+
+  .values {
+    display: flex;
+  }
+
+  .values .items {
+    margin-right: 5em;
+    margin-top: 1.3em;
+  }
+  .values h5 {
+    font-size: 1.5rem;
+  }
+}
