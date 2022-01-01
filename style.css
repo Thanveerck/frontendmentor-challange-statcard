@@ -31,8 +31,7 @@ body {
   background: var(--color-second-bg);
   width: 90%;
   height: 90%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
+  border-radius: 15px;
 }
 
 .wrapper {
@@ -92,8 +91,7 @@ img {
     flex-direction: row;
     height: 446px;
     width: 1124px;
-    border-bottom-right-radius: 15px;
-    border-top-left-radius: 0;
+    border-radius: 15px;
   }
   .container > * {
     flex: 1;
